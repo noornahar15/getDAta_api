@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="EditTextLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+       <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">#384B51</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/round_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/round_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/round_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/round_radius</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorPrimaryDark">@color/purple_200</item>
+        <item name="colorAccent">#CD0E0E</item>
+        <item name="android:background">@color/teal_200</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">@color/black</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/black</item>
+        <item name="statusBarBackground">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <!-- Splash launcher theme -->
+    <style name="SplashTheme.Launcher" parent="Theme.MaterialComponents.Light.NoActionBar">>
+        <item name="android:windowBackground">@drawable/pic</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/black</item>
+       <!-- <item name="android:windowLightStatusBar" tools:ignore="NewApi">#59ECBD</item>-->
+        <item name="statusBarBackground">@color/black</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/black</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:padding">@dimen/large_padding</item>
+        <item name="android:textColor">#D8A2A2</item>
+        <item name="android:textSize">@dimen/standard_text</item>
+    </style>
+    <!-- Button theme -->
+    <style name="ButtonTheme" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">@dimen/round_radius</item>
+        <item name="backgroundTint">#8DC6B4</item>
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textColor">#9879A5</item>
+        <item name="android:padding">@dimen/standard_padding</item>
+    </style>
+    <!--  Bottom Navigation theme -->
+    <style name="BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextColor">#83C660</item>
+        <item name="itemIconSize">21dp</item>
+        <item name="itemIconTint">#FBF83C</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@dimen/standard_text</item>
+        <item name="itemTextAppearanceInactive">@dimen/small_text</item>
+
+    </style>
+    <!-- Toolbar theme -->
+
+    <style name="circular" parent="">
+       <item name="cornerFamily" >rounded</item>
+       <item name="cornerSize" >50%</item>
+       <item name="color">#A889DD</item>
+    </style>
+</resources>
