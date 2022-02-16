@@ -161,7 +161,7 @@ class PostDataActivity : AppCompatActivity() {
         postBtn = findViewById(R.id.post_btn)
         progressBar = findViewById(R.id.progress_bar)
     }
-
+// app permission
     private fun checkPermission() {
         if (ActivityCompat.checkSelfPermission(
                 this, Manifest.permission.ACCESS_FINE_LOCATION

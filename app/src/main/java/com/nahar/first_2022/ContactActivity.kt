@@ -22,7 +22,7 @@ class ContactActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
-
+// recycleView data get in new activity
     private fun getIntentValue() {
         contact = intent.getBooleanExtra("contact", false)
 

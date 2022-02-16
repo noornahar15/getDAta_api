@@ -29,7 +29,7 @@ class DashboardActivity : AppCompatActivity() {
         bottomNavigation()
         setSelectedItemId(R.id.navigationHomeId)
     }
-
+//navigation item select
 
     private fun bottomNavigation() {
         bottomNavigationView = findViewById(R.id.btm_navigationViewId)
@@ -38,6 +38,7 @@ class DashboardActivity : AppCompatActivity() {
         )
     }
 
+    // add navigation item with fragment
     private val kOnNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {

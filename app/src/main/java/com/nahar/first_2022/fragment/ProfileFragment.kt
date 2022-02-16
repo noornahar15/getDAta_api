@@ -52,6 +52,7 @@ class ProfileFragment : Fragment() {
         }
 
     }
+    // api data call use volley method
 
     private fun buildDisplayData() {
 
@@ -101,6 +102,8 @@ class ProfileFragment : Fragment() {
 
         queue.add(stringRequest)
     }
+
+    //item select option
 
     private fun setSelectedItemId(id: Int) {
         (activity as DashboardActivity).bottomNavigationView.selectedItemId = id

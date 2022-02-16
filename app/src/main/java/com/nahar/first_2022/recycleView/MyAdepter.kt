@@ -35,6 +35,7 @@ class MyAdapter(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        //image load in api
         Picasso
             .get()
             .load(newsList[position].imageId)
@@ -43,6 +44,7 @@ class MyAdapter(
 
         holder.title.text = newsList[position].name
 
+        // api data show in recycleView
         holder.gridLayout.setOnClickListener {
             context.startActivity(
                 Intent(context, ContactActivity::class.java)
@@ -53,6 +55,7 @@ class MyAdapter(
         }
     }
 }
+
 
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val gridLayout: LinearLayout = view.findViewById(R.id.grid_layout)
